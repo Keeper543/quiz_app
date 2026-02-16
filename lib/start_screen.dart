@@ -1,51 +1,35 @@
-
+//start screen
 import 'package:flutter/material.dart';
 
-class StartScreen extends StatelessWidget{
-  
-  const StartScreen({super.key});
+class StartScreen extends StatelessWidget {
+  const StartScreen(
+    this.startQuiz, {super.key});
+  final void Function() startQuiz;
   @override
   Widget build(BuildContext context) {
-    
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [Color.fromARGB(225, 63, 8, 165),Color.fromARGB(225, 12, 1, 36)
-          ],
-          begin: Alignment.topRight,
-          end:  Alignment.bottomLeft
-
-          )
-      ),
-      child: Center(
+    return Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          children: [ 
+          children: [
             Image.asset(
-              'assets/images/assets/images/quiz-logo.png',
+              'assets/images/quiz-logo.png',
               width: 280,
-              ),
-              const SizedBox(
-                height: 80,
-              ),
-
-            Text("Challenge yourself" ,
-            style: TextStyle(color: Colors.white, fontSize: 22),
+              color: Color.fromARGB(200, 255, 255, 255),
             ),
-            const SizedBox(
-                height: 30,
-              ),
-              OutlinedButton(
-                onPressed: (){}, 
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: Colors.white
-                ),
-                child: Text("start Quiz")
-                )
+            const SizedBox(height: 80),
+            Text(
+              "Challenge yourself on this quiz!",
+              style: TextStyle(color: Colors.white, fontSize: 22),
+            ),
+            const SizedBox(height: 30),
+            OutlinedButton.icon(
+              onPressed:startQuiz,
+              icon: const Icon(Icons.arrow_circle_right_outlined),
+              style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
+              label: Text("Start Quiz"),
+            ),
           ],
-        )
         ),
-    );
-
-    }
+      );
   }
+}
