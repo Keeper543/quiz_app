@@ -5,5 +5,10 @@ const questions =[
     'Necromancer'//correct
     
     ,'Fighter','Mage','Hunter']
+   ),
+   QuizQuestion('What flower does Frieren use to decorate Himmels statue?', [
+    'Blue moon weed flowers.'//correct
+    
+    ,'forget_me_nots','Mage','Hunter']
    )
-]
+];

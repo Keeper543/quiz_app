@@ -6,7 +6,7 @@ class StartScreen extends StatelessWidget{
   const StartScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -17,7 +17,34 @@ class StartScreen extends StatelessWidget{
 
           )
       ),
-      child: Center(child: Text("hello"),),
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [ 
+            Image.asset(
+              'assets/images/assets/images/quiz-logo.png',
+              width: 280,
+              ),
+              const SizedBox(
+                height: 80,
+              ),
+
+            Text("Challenge yourself" ,
+            style: TextStyle(color: Colors.white, fontSize: 22),
+            ),
+            const SizedBox(
+                height: 30,
+              ),
+              OutlinedButton(
+                onPressed: (){}, 
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: Colors.white
+                ),
+                child: Text("start Quiz")
+                )
+          ],
+        )
+        ),
     );
 
     }
