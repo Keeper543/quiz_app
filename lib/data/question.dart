@@ -1,14 +1,37 @@
 import 'package:quiz_app/models/quiz_question.dart';
 
 const questions =[
-   QuizQuestion('What classification was Sung Jinwoo given by the System?', [
-    'Necromancer'//correct
+   QuizQuestion('what is the main produsing team for Stray kids', [
+    '3racha'//correct
     
-    ,'Fighter','Mage','Hunter']
+    ,'spearB & J.one','Suprem boy','jypai']
    ),
-   QuizQuestion('What flower does Frieren use to decorate Himmels statue?', [
-    'Blue moon weed flowers.'//correct
+
+   QuizQuestion('How danced for BTS before dabuting with Stray Kids', [
+    'Lee Know'//correct
     
-    ,'forget_me_nots','Mage','Hunter']
+    ,'Hyunjin','Felix','Han']
+   ),
+
+   QuizQuestion('who created the Stray kids logo', [
+    'Bang Chan'//correct
+    
+    ,'JYPE','Hyunjin','I.N']
+   ),
+   QuizQuestion('who is the youngest member of Stray Kids', [
+    'I.N.'//correct
+    
+    ,'Seungmin','Felix','Han']
+   ),
+   QuizQuestion('how many members are there in Stray kids', [
+    '8'//correct
+    
+    ,'7','9','3']
+   ),
+   QuizQuestion('What is the fandom name', [
+    'stay'//correct
+    
+    ,'forget_me_nots','the kids','child']
    )
+
 ];

@@ -2,12 +2,9 @@
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatelessWidget {
-  const StartScreen(
-    this.startQuiz, {super.key});
-  final void Function() startQuiz;
-  @override
+
+
   Widget build(BuildContext context) {
-    return Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -27,9 +24,8 @@ class StartScreen extends StatelessWidget {
               icon: const Icon(Icons.arrow_circle_right_outlined),
               style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
               label: Text("Start Quiz"),
-            ),
-          ],
-        ),
-      );
+      ),
+      ],
+    );
   }
 }
