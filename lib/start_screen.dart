@@ -1,11 +1,13 @@
 //start screen
 import 'package:flutter/material.dart';
-
+import 'package:quiz_app/start_screen.dart';
 class StartScreen extends StatelessWidget {
+  StartScreen(void Function() switchScreen);
 
 
+@override
   Widget build(BuildContext context) {
-        child: Column(
+       child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
@@ -20,7 +22,7 @@ class StartScreen extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             OutlinedButton.icon(
-              onPressed:startQuiz,
+              onPressed: startQuiz(),
               icon: const Icon(Icons.arrow_circle_right_outlined),
               style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
               label: Text("Start Quiz"),
