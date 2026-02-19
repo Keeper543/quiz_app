@@ -23,13 +23,13 @@ const questions =[
     
     ,'Seungmin','Felix','Han']
    ),
-   QuizQuestion('how many members are there in Stray kids', [
+   QuizQuestion('how many members are there in Stray kids, ___ is Fate', [
     '8'//correct
     
     ,'7','9','3']
    ),
    QuizQuestion('What is the fandom name', [
-    'stay'//correct
+    'Stay'//correct
     
     ,'forget_me_nots','the kids','child']
    )
