@@ -2,12 +2,12 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/start_screen.dart';
 class StartScreen extends StatelessWidget {
-  StartScreen(void Function() switchScreen);
-
+  StartScreen(this.startQuiz{super.key});
+  final void Function() startQuiz;
 
 @override
   Widget build(BuildContext context) {
-       child: Column(
+       return Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
