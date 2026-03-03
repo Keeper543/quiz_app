@@ -17,7 +17,7 @@ class _QuizState extends State<Quiz> {
   void chooseAnswer(String answer){
     selectedAnswers.add(answer);
     if(selectedAnswers.length == questions.length){
-      setState((){
+      setState((){ //WIP answer screen
         selectedAnswers = [];
         activeScreen = StartScreen(switchScreen);
       });
