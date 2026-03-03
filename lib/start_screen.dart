@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/start_screen.dart';
 class StartScreen extends StatelessWidget {
+  
   StartScreen(this.startQuiz{super.key});
   final void Function() startQuiz;
 
