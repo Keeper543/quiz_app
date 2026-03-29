@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_app/question_summary.dart';
 import 'package:quiz_app/data/question.dart';
@@ -7,9 +6,10 @@ class ResultsScreen extends StatelessWidget{
   const ResultsScreen({super.key,required this.choosenAnswer});
 
 final List<String> choosenAnswer;
-List<Map<String, Object>>getSummaryData(){
 
-List<Map<String, Object>> summary = [];
+
+List<Map<String, Object>>getSummaryData(){
+  List<Map<String, Object>> summary = [];
 
   for(var i = 0 ; i< choosenAnswer.length;i++){
     summary.add({
